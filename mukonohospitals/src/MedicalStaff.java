@@ -10,4 +10,9 @@ public abstract class MedicalStaff {
         this.department = department;
         this.workingHours = workingHours;
     }
+    public void showDetails() {
+        System.out.println(employeeId + "  " + name + "  " + department
+                + "  " + workingHours + " hrs");
+    }
+    public  abstract void performPatientCare();
 }
